@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Francis Boampong - Cybersecurity Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --accent-blue: #007AFF;
+      --bg-offwhite: #F8F3EF;
+      --bg-white: #FFFFFF;
+      --text-dark: #1C1C1E;
+      --text-gray: #5E5E5E;
+    }
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      color: var(--text-dark);
+      background-color: var(--bg-offwhite);
+      scroll-snap-type: y mandatory;
+      overflow-y: scroll;
+    }
+    nav, footer { scroll-snap-align: start; }
+    section {
+      scroll-snap-align: start;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+    }
+    @keyframes fadeInUp { from { opacity: 0; transform: translateY(20px);} to { opacity: 1; transform: translateY(0);} }
+    .fade-up { opacity: 0; transform: translateY(20px); animation: fadeInUp 0.8s ease-out forwards; }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="fixed top-0 w-full bg-[var(--bg-white)] bg-opacity-95 backdrop-blur-md shadow-lg z-50 fade-up">
+    <div class="container mx-auto flex items-center justify-between px-6 py-4">
+      <a href="#home" class="text-xl font-semibold text-[var(--text-dark)]">Francis Boampong</a>
+      <ul class="hidden md:flex space-x-8 uppercase text-sm text-[var(--text-gray)]">
+        <li><a href="#about" class="hover:text-[var(--accent-blue)]">👋 About</a></li>
+        <li><a href="#whatido" class="hover:text-[var(--accent-blue)]">🛡️ What I Do</a></li>
+        <li><a href="#value" class="hover:text-[var(--accent-blue)]">💎 My Value</a></li>
+        <li><a href="#service" class="hover:text-[var(--accent-blue)]">⚙️ Service</a></li>
+        <li><a href="#projects" class="hover:text-[var(--accent-blue)]">📂 Projects</a></li>
+        <li><a href="#education" class="hover:text-[var(--accent-blue)]">🎓 Education</a></li>
+        <li><a href="#contact" class="hover:text-[var(--accent-blue)]">📬 Contact</a></li>
+      </ul>
+      <button id="menu-btn" class="md:hidden text-[var(--text-gray)] focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
+        </svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-[var(--bg-white)] bg-opacity-95 backdrop-blur-md border-t border-gray-200">
+      <a href="#about" class="block px-6 py-3 text-[var(--text-gray)] hover:text-[var(--accent-blue)]">👋 About</a>
+      <a href="#whatido" class="block px-6 py-3 text-[var(--text-gray)] hover:text-[var(--accent-blue)]">🛡️ What I Do</a>
+      <a href="#value" class="block px-6 py-3 text-[var(--text-gray)] hover:text-[var(--accent-blue)]">💎 My Value</a>
+      <a href="#service" class="block px-6 py-3 text-[var(--text-gray)] hover:text-[var(--accent-blue)]">⚙️ Service</a>
+      <a href="#projects" class="block px-6 py-3 text-[var(--text-gray)] hover:text-[var(--accent-blue)]">📂 Projects</a>
+      <a href="#education" class="block px-6 py-3 text-[var(--text-gray)] hover:text-[var(--accent-blue)]">🎓 Education</a>
+      <a href="#contact" class="block px-6 py-3 text-[var(--text-gray)] hover:text-[var(--accent-blue)]">📬 Contact</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home" class="bg-[var(--bg-offwhite)]">
+    <div class="text-center p-24 fade-up">
+      <h1 class="text-8xl font-extrabold mb-4 text-[var(--accent-blue)]">Francis</h1>
+      <h2 class="text-2xl uppercase tracking-wide text-[var(--text-gray)] mb-6">Cybersecurity Portfolio</h2>
+      <p class="max-w-2xl mx-auto text-lg leading-relaxed text-[var(--text-gray)] mb-8">
+        As a driven Network Security student, I combine hands-on IT support experience with academic training in vulnerability assessment, network diagnostics, and secure system design. This portfolio highlights my technical projects, certifications, and professional journey.
+      </p>
+      <a href="#about" class="px-8 py-3 rounded-full bg-[var(--accent-blue)] text-white text-sm font-medium shadow-xl transition hover:bg-[var(--accent-blue)]/90">
+        View My Work
+      </a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="bg-[var(--bg-white)]">
+    <div class="container mx-auto max-w-4xl rounded-2xl shadow-2xl p-20 fade-up">
+      <h3 class="text-5xl font-semibold mb-6 text-[var(--accent-blue)]">👋 About Me</h3>
+      <p class="text-[var(--text-gray)] mb-8 leading-relaxed text-xl">
+        I’m Francis Boampong, a Ghanaian-American cybersecurity student based in Pueblo West, Colorado. Since relocating in 2020, I have completed an A.A.S. in Network Security and am pursuing a B.A. in Computer Science with a Cybersecurity emphasis at UCCS. My professional experience includes 30–40 hours per week supporting network operations and desktop environments at Amazon and as an IT work-study student at PCC.
+      </p>
+      <p class="text-[var(--text-gray)] leading-relaxed text-xl">
+        Outside of school and work, I volunteer as a mentor for peer cybersecurity workshops and participate in National Cyber League competitions, where I apply real-world techniques to capture-the-flag scenarios.
+      </p>
+    </div>
+  </section>
+
+  <!-- WHAT I DO -->
+  <section id="whatido" class="bg-[var(--bg-white)]">
+    <div class="container mx-auto max-w-4xl rounded-2xl shadow-2xl p-20 fade-up">
+      <h3 class="text-5xl font-semibold mb-6 text-[var(--accent-blue)]">🛡️ What I Do</h3>
+      <p class="text-[var(--text-gray)] mb-6 leading-relaxed text-lg">
+        I design and implement network defense strategies using tools like Wireshark and OpenVAS to identify and mitigate vulnerabilities. I automate routine tasks with Bash and Python scripts, improving system reliability and reducing manual configuration time by up to 40%.
+      </p>
+      <p class="text-[var(--text-gray)] mb-6 leading-relaxed text-lg">
+        In lab environments, I build virtual networks for penetration testing, develop custom security checklists, and document findings in detailed reports to guide remediation efforts.
+      </p>
+      <p class="text-[var(--text-gray)] leading-relaxed text-lg">
+        I continuously research emerging threats, attend cybersecurity webinars, and contribute to open-source security projects to stay ahead of the latest attack vectors.
+      </p>
+    </div>
+  </section>
+
+  <!-- MY VALUE -->
+  <section id="value" class="bg-[var(--bg-white)]">
+    <div class="container mx-auto max-w-4xl rounded-2xl shadow-2xl p-20 fade-up">
+      <h3 class="text-5xl font-semibold mb-6 text-[var(--accent-blue)]">💎 My Value</h3>
+      <h4 class="text-3xl font-medium mb-4 text-[var(--text-dark)]">Vision</h4>
+      <p class="text-[var(--text-gray)] mb-6 leading-relaxed text-lg">
+        To build and defend resilient digital environments that empower organizations and protect critical data in an ever-evolving threat landscape.
+      </p>
+      <h4 class="text-3xl font-medium mb-4 text-[var(--text-dark)]">Mission</h4>
+      <ul class="list-disc list-inside text-[var(--text-gray)] space-y-2 text-lg">
+        <li>Diagnose and resolve complex security issues through data-driven analysis</li>
+        <li>Implement best practices in network configuration and system hardening</li>
+        <li>Share knowledge through clear documentation, training sessions, and mentorship</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- SERVICE -->
+  <section id="service" class="bg-[var(--bg-white)]">
+    <div class="container mx-auto max-w-4xl rounded-2xl shadow-2xl p-20 fade-up">
+      <h3 class="text-5xl font-semibold mb-6 text-[var(--accent-blue)]">⚙️ Service</h3>
+      <p class="text-[var(--text-gray)] mb-6 leading-relaxed text-lg">
+        I offer professional services in network security assessment, system configuration, and incident response planning. My approach combines rigorous testing protocols with practical remediation strategies to deliver secure, scalable solutions.
+      </p>
+      <ul class="list-disc list-inside text-[var(--text-gray)] space-y-2 text-lg">
+        <li>Security Audits & Vulnerability Assessments (Wireshark, OpenVAS)</li>
+        <li>System Hardening & Configuration Management (Linux, Windows Server)</li>
+        <li>Automation & Scripting (Bash, Python) for operational efficiency</li>
+        <li>Technical Documentation & Training Materials</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="bg-[var(--bg-white)]">
+    <div class="container mx-auto max-w-4xl rounded-2xl shadow-2xl p-20 fade-up">
+      <h3 class="text-5xl font-semibold mb-6 text-[var(--accent-blue)]">📂 Projects</h3>
+      <ol class="list-decimal list-inside space-y-8 text-[var(--text-gray)] leading-relaxed text-lg">
+        <li><strong>Wireshark Traffic Analysis</strong>, Pueblo CC — Conducted a semester-long study of DNS traffic, uncovering three misconfigured resolvers and reducing average lookup latency by 25%.</li>
+        <li><strong>OpenVAS Scan & Reporting</strong>, Home Lab — Automated weekly vulnerability scans, documented findings in HTML reports, and implemented remediation scripts to patch 15 CVEs within 48 hours.</li>
+        <li><strong>Automated User Provisioning</strong>, UCCS IT Work-Study — Developed a Bash script to onboard new users and apply group policies, reducing manual provisioning time from 10 minutes to under 2 minutes per user.</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="bg-[var(--bg-white)]">
+    <div class="container mx-auto max-w-4xl rounded-2xl shadow-2xl p-20 fade-up">
+      <h3 class="text-5xl font-semibold mb-6 text-[var(--accent-blue)]">🎓 Education & Certifications</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div>
+          <h4 class="text-2xl font-semibold mb-4 text-[var(--text-dark)]">Education</h4>
+          <ul class="list-disc list-inside space-y-2 text-lg text-[var(--text-gray)]">
+            <li><strong>A.A.S. in Network Security</strong>, Pueblo Community College, Pueblo, CO — May 2023</li>
+            <li><strong>B.A. in Computer Science (Cybersecurity Emphasis)</strong>, University of Colorado Colorado Springs — In Progress</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-2xl font-semibold mb-4 text-[var(--text-dark)]">Certifications</h4>
+          <ul class="list-disc list-inside space-y-2 text-lg text-[var(--text-gray)]">
+            <li>CompTIA Security+ &ndash; March 2023</li>
+            <li>CompTIA Network+ &ndash; May 2023</li>
+            <li>Cyber Defense Certificate &ndash; PCC</li>
+            <li>Networking Certificate &ndash; PCC</li>
+            <li>Information Assurance Certificate &ndash; PCC</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="bg-[var(--bg-white)]">
+    <div class="container mx-auto max-w-4xl rounded-2xl shadow-2xl p-20 text-center fade-up">
+      <h3 class="text-5xl font-semibold mb-6 text-[var(--accent-blue)]">📬 Contact</h3>
+      <p class="text-[var(--text-gray)] mb-2 text-lg">francolamar02@gmail.com, (719) 967 3592, Colorado Springs, CO 80918</p>
+    </div>
+  </section>
+
+  <footer class="py-12 text-center text-sm text-[var(--text-gray)] fade-up">
+    &copy; 2025 Francis Boampong. All rights reserved.
+  </footer>
+
+  <script>
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+  </script>
+</body>
+</html>
